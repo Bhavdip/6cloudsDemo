@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">SixCloudVlt</string>
+  <string name="toast_prepare_success">Prepared successfully</string>
+  <string name="toast_fail_msg">Fail!! Reason:</string>
+  <string name="toast_play_compleion">video ended</string>
+  <string name="log_change_quality_success">Video quality switched successfully</string>
+  <string name="log_change_quality_fail">Video quality switched unsuccessfully</string>
+  <string name="log_play_stopped">play operation stopped</string>
+</resources>
