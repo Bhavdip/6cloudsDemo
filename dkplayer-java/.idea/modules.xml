@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dkplayer.iml" filepath="$PROJECT_DIR$/../dkplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dkplayer-arm64/dkplayer-arm64.iml" filepath="$PROJECT_DIR$/../dkplayer-arm64/dkplayer-arm64.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dkplayer-armv5/dkplayer-armv5.iml" filepath="$PROJECT_DIR$/../dkplayer-armv5/dkplayer-armv5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dkplayer-armv7a/dkplayer-armv7a.iml" filepath="$PROJECT_DIR$/../dkplayer-armv7a/dkplayer-armv7a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dkplayer-java.iml" filepath="$PROJECT_DIR$/dkplayer-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dkplayer-x86/dkplayer-x86.iml" filepath="$PROJECT_DIR$/../dkplayer-x86/dkplayer-x86.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dkplayer-x86_64/dkplayer-x86_64.iml" filepath="$PROJECT_DIR$/../dkplayer-x86_64/dkplayer-x86_64.iml" />
+    </modules>
+  </component>
+</project>

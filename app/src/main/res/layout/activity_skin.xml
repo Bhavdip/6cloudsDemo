@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="sixcloud.vlt.android.demo.v1.SixcloudPlayer"
-    >
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="50dp"
-      android:gravity="center"
-      android:background="#F2F2F2"
-      >
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/sixclouds"
-        />
-  </LinearLayout>
+    tools:context="sixcloud.vlt.android.demo.v1.SixcloudPlayer">
 
-  <com.aliyun.vodplayerview.widget.AliyunVodPlayerView
-      android:id="@+id/aliyunPlayerView"
-      android:layout_marginTop="4dp"
-      android:layout_width="match_parent"
-      android:layout_height="200dp"
-      android:background="#F2F2F2"
-      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F2F2F2"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sixclouds" />
+    </LinearLayout>
+
+    <com.aliyun.vodplayerview.widget.AliyunVodPlayerView
+        android:id="@+id/aliyunPlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        android:background="#F2F2F2" />
 </LinearLayout>
 
