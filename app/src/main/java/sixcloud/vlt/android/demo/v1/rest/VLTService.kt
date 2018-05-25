@@ -17,7 +17,7 @@ interface VLTService {
   fun getVideos(): Observable<Model.Response>
 
   //"http://sixclouds.cn/beta/"
-  //http://192.168.1.182/sixclouds-web/getvideos
+  //http://192.168.1.182/sixclouds-web/
   companion object {
     fun create(): VLTService {
       val okayClient = OkHttpClient.Builder()

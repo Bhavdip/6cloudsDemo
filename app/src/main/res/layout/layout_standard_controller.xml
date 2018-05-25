@@ -25,7 +25,7 @@
             android:visibility="gone"
             tools:visibility="visible" />
 
-        <com.dueeeke.dkplayer.widget.MarqueeTextView
+        <sixcloud.vlt.android.demo.v1.MarqueeTextView
             android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

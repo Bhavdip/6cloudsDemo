@@ -8,7 +8,6 @@ import com.dueeeke.videoplayer.player.IjkPlayer
 import com.dueeeke.videoplayer.player.PlayerConfig
 import kotlinx.android.synthetic.main.activity_definition_player.*
 import sixcloud.vlt.android.demo.v1.controller.DefinitionController
-import tv.danmaku.ijk.media.player.IjkMediaPlayer
 import java.util.*
 
 /**
@@ -18,9 +17,11 @@ class DefinitionPlayerActivity : AppCompatActivity() {
 
     companion object {
         private val INTENT_URL = "url"
-        fun newIntent(context: Context, url: String): Intent {
-            val intent = Intent(context, FixedSkinActivity::class.java)
+        private val INTENT_TITLE = "title"
+        fun newIntent(context: Context, url: String, title: String): Intent {
+            val intent = Intent(context, DefinitionPlayerActivity::class.java)
             intent.putExtra(INTENT_URL, url)
+            intent.putExtra(INTENT_TITLE, title)
             return intent
         }
     }
@@ -31,20 +32,20 @@ class DefinitionPlayerActivity : AppCompatActivity() {
         val config = PlayerConfig.Builder().setCustomMediaPlayer(object : IjkPlayer(this) {
 
             override fun setOptions() {
-                mMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "enable-accurate-seek", 1)
+                //mMediaPlayer.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "enable-accurate-seek", 1)
             }
         }).build()
-        val controller = DefinitionController(this)
-
         ijkVideoView.setPlayerConfig(config)
+
+        val controller = DefinitionController(this)
         val videos = LinkedHashMap<String, String>()
-        videos.put("Quality1", intent.getStringExtra("url"))
-        videos.put("Quality2", intent.getStringExtra("url"))
-        videos.put("Quality3", intent.getStringExtra("url"))
+        videos["Quality1"] = intent.getStringExtra(INTENT_URL)
+        videos["Quality2"] = intent.getStringExtra(INTENT_URL)
+        videos["Quality3"] = intent.getStringExtra(INTENT_URL)
 
         ijkVideoView.setDefinitionVideos(videos)
         ijkVideoView.setVideoController(controller)
-        ijkVideoView.title = "韩雪：积极的悲观主义者"
+        ijkVideoView.title = intent.getStringExtra(INTENT_TITLE)
         ijkVideoView.start()
     }
 

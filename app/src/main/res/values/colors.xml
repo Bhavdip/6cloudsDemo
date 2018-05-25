@@ -6,4 +6,8 @@
   <color name="theme_color">#8a75d0</color>
   <color name="theme_color_translucent">#8a75d0</color>
   <color name="background_color">#96000000</color>
+
+  <color name="player_theme_color">#8a75d0</color>
+  <color name="player_theme_color_translucent">#b48a75d0</color>
+  <color name="player_background_color">#96000000</color>
 </resources>

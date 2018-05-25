@@ -20,7 +20,6 @@ class DefinitionIjkVideoView : IjkVideoView, DefinitionMediaPlayerControl {
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
 
     override fun getDefinitionData(): LinkedHashMap<String, String> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return mDefinitionMap
     }
 

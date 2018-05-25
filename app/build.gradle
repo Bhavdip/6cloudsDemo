@@ -31,7 +31,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    kapt 'com.android.databinding:compiler:3.1.2'
+    kapt 'com.android.databinding:compiler:3.0.1'
     implementation "com.android.support:design:$rootProject.supportLibraryVersion"
     implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     implementation 'com.squareup.okhttp3:okhttp:3.9.1'
@@ -47,9 +47,13 @@ dependencies {
     compile(name: 'AlivcPlayer', ext: 'aar')
     compile(name: 'AliyunVodPlayer', ext: 'aar')
     //dkplayer-java dependencies
-    implementation project(':dkplayer-java')
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:2.4.2'
     implementation 'com.github.dueeeke.dkplayer:dkplayer-armv7a:2.4.2'
-    implementation "tv.danmaku.ijk.media:ijkplayer-java:$rootProject.ijkPlayerVersion"
+
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-armv5:2.4.2'
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-arm64:2.4.2'
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-x86:2.4.2'
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-x86_64:2.4.2'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
